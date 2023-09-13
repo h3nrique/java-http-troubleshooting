@@ -11,5 +11,5 @@ ENV TZ=America/Sao_Paulo
 EXPOSE 8080
 ENV APP_HOME /opt
 WORKDIR /opt
-COPY --from=build /usr/src/fabricads/target/java-http-troubleshooting.jar /opt/
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/opt/java-http-troubleshooting.jar"]
+COPY --from=build /usr/src/fabricads/target/java-http-troubleshooting-with-libs.jar /opt/
+ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/opt/java-http-troubleshooting-with-libs.jar"]
