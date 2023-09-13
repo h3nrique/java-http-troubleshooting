@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: java-http-troubleshooting
+  name: java-http-troubleshooting
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: java-http-troubleshooting
+  template:
+    metadata:
+      labels:
+        app: java-http-troubleshooting
+    spec:
+      containers:
+        - image: java-http-troubleshooting:latest
+          imagePullPolicy: Always
+          name: java-http-troubleshooting
+          ports:
+            - containerPort: 8080
+              protocol: TCP
