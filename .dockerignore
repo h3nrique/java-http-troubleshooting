@@ -1,0 +1,6 @@
+.git
+.tekton
+target
+.gitignore
+*.md
+*.http
