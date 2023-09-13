@@ -1,6 +1,7 @@
 POST http://localhost:8080/test?param=my_value HTTP/1.1
 Content-Type: application/json
 X-My-Header: header value
+X-Example: exmple header value
 
 {
     "test": "new value"
