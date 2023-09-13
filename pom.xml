@@ -21,6 +21,13 @@
             <version>2.9.4</version>
         </dependency>
 
+        <!-- Utils -->
+        <dependency>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+            <version>2.10.1</version>
+        </dependency>        
+
         <!-- Logs -->
         <dependency>
             <groupId>org.slf4j</groupId>
